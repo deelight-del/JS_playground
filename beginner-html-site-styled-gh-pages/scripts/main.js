@@ -1,4 +1,5 @@
 const myImage = document.querySelector("img");
+const myButton = document.querySelector("button");
 
 myImage.onclick() = () => {
 	const mySrc = myImage.getAttribute("src");
@@ -18,7 +19,7 @@ function setUserName() {
 	myHeading.textContent = "Mozilla is cool, ${myName}";
 }
 
-if (!(localStorage.getItem("name")) {
+if (!localStorage.getItem("name") {
 	setUserName();
 } else {
 	const storedName = localsSorage.getItem("name");
@@ -26,5 +27,5 @@ if (!(localStorage.getItem("name")) {
 }
 
 myButton.onclick = () => {
-	setUserName;
+	setUserName();
 }
